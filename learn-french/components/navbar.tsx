@@ -1,11 +1,12 @@
 "use client";
 
-import { Menu } from "lucide-react";
+import { Menu, Sparkles } from "lucide-react";
 import { Poppins } from "next/font/google";
 import Link from "next/link";
 import { UserButton } from "@clerk/nextjs";
 
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 const font = Poppins({
     weight  : "600",
@@ -22,13 +23,17 @@ export const Navbar = () => {
                         "hidden md:block text-xl md:tex-3xl font-bold text-primary",
                         font.className
                     )}>
-                        Learn French with me!
+                        Learn French with GG!
                     </h1>
 
                 </Link>
             </div>
             <div className="flex items-center gap-x-3">
-                <UserButton/>
+                <Button variant="premium" size="sm" >
+                    Upgrade 
+                    <Sparkles className="h-4 w-4 fill-white text-white ml-2"></Sparkles>
+                </Button>
+                <UserButton />
             </div>
         </div>
     );
