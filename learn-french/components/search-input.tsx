@@ -15,7 +15,11 @@ export const SearchInput = () => {
     const categoryId = searchParams.get("categoryId");
     const name = searchParams.get("name");
 
+
     const [value, setValue] = useState(name || "");
+
+    // this debounce is used to prevent the search to be triggered on every keystroke
+    // this 500 indicate 0.5s or 500ms
     const debouncedValue = useDebounce<string>(value, 500);
 
     const onChange: ChangeEventHandler<HTMLInputElement> = (event) => {
@@ -32,7 +36,9 @@ export const SearchInput = () => {
             url: window.location.href,
             query,
         },{ skipEmptyString: true, skipNull: true });   
+
         router.push(url);
+        
     },[debouncedValue, router, categoryId])
 
     return (
