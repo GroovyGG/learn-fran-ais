@@ -156,7 +156,7 @@ Elon: Always! But right now, I'm particularly excited about Neuralink. It has th
                             <FormItem className="col-span-2 md:col-span-1">
                             <FormLabel>Name</FormLabel>
                             <FormControl>
-                                <Input disabled={isLoading} placeholder="Elon Musk" {...field} />
+                                <Input disabled={isLoading} placeholder="Beautiful GG" {...field} />
                             </FormControl>
                             <FormDescription>
                                 This is how your AI Companion will be named.
@@ -172,7 +172,7 @@ Elon: Always! But right now, I'm particularly excited about Neuralink. It has th
                             <FormItem>
                             <FormLabel>Description</FormLabel>
                             <FormControl>
-                                <Input disabled={isLoading} placeholder="CEO & Founder of Tesla, SpaceX" {...field} />
+                                <Input disabled={isLoading} placeholder="The creator of this shitty site" {...field} />
                             </FormControl>
                             <FormDescription>
                                 Short description for your AI Companion
