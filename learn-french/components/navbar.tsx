@@ -25,7 +25,7 @@ export const Navbar = () => {
                         "hidden md:block text-xl md:tex-3xl font-bold text-primary",
                         font.className
                     )}>
-                        Learn French with GG!
+                        Learn with GG!
                     </h1>
 
                 </Link>
