@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 
 export const Sidebar = () => {
     const pathname = usePathname()
-    const router = useRouter
+    const router = useRouter()
     const routes = [
         {
             icon: Home,
