@@ -6,9 +6,17 @@ import { Category, Companion } from "@prisma/client";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
+import { 
+    Form, 
+    FormControl, 
+    FormField, 
+    FormItem, 
+    FormLabel, 
+    FormMessage 
+} from "@/components/ui/form";
 import { Separator } from "@/components/ui/separator";
 import { ImageUpload } from "@/components/image-upload";
+import { Input } from "@/components/ui/input";
 
  interface CompanionFormProps {
     initialData: Companion | null;
@@ -92,6 +100,24 @@ import { ImageUpload } from "@/components/image-upload";
                             </FormItem>
                         )}
                     />
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <FormField
+                            name="name"
+                            control={form.control}
+                            render={({field}) => (
+                                <FormItem className="col-span-2 md:col-span-1 ">
+                                    <FormLabel>Name</FormLabel>
+                                    <FormControl>  
+                                        <Input
+                                            disabled={isLoading} />
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                            >
+
+                        </FormField>
+
+                    </div>
                 </form>
             </Form>
             
