@@ -5,7 +5,7 @@ import { Replicate } from "langchain/llms/replicate";
 import { CallbackManager } from "langchain/callbacks";
 import { NextResponse } from "next/server";
 
-import MemoryManager  from "@/lib/memory";
+import { MemoryManager }  from "@/lib/memory";
 import { rateLimit } from "@/lib/rate-limit";
 import prismadb from "@/lib/prismadb";
 
