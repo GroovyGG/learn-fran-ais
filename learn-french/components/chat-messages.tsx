@@ -20,8 +20,6 @@ export const ChatMessages = ({
 
   const [fakeLoading, setFakeLoading] = useState(messages.length === 0 ? true : false);
 
-  //timeout in order to simulate a loading state
-  // 1 second
   useEffect(() => {
     const timeout = setTimeout(() => {
       setFakeLoading(false);
