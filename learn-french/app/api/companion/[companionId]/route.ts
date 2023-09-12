@@ -5,7 +5,7 @@ import prismadb from "@/lib/prismadb";
 //import { checkSubscription } from "@/lib/subscription";
 
 export async function PATCH(
-    req: Request
+    req: Request,
     { params }: { params: { companionId: string } }
 ) {
 
